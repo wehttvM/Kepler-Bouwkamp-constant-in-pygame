@@ -6,12 +6,12 @@
 ---------------------------
 A Kepler-Bouwkamp constant I made with pygames and Python
 
-![Wikipedia imgage](https://raw.githubusercontent.com/MSchelt/Kepler-Bouwkamp-constant-in-pygame/master/Pictures/Kepler-constant.png)
+![Wikipedia imgage](https://raw.githubusercontent.com/MSchelt/Kepler-Bouwkamp-constant-in-pygame/master/imgs/Kepler-constant.png)
 
 [Image was taken from Wikipedia Kepler–Bouwkamp constant](https://en.wikipedia.org/wiki/Kepler%E2%80%93Bouwkamp_constant)
 
 
-![Pygame Image](https://raw.githubusercontent.com/MSchelt/Kepler-Bouwkamp-constant-in-pygame/master/Pictures/Kepler-Bouwkamp-constant-pygame.png)
+![Pygame Image](https://raw.githubusercontent.com/MSchelt/Kepler-Bouwkamp-constant-in-pygame/master/imgs/Kepler-Bouwkamp-constant-pygame.png)
 
 This image was made directly form the pygame script window
 
