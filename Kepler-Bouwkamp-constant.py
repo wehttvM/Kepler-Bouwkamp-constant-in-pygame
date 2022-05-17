@@ -16,7 +16,11 @@ pygame.init()
 #size = width, height = 1366, 768
 size = width, height = 500, 500
 HalfSizeFloat = HalfSizeWidthFloat, HalfSizeHeightFloat = width / 2, height / 2
-HalfSizeInteger = HalfSizeWidthInteger, HalfSizeHeightInteger = int(width / 2), int(height / 2)
+HalfSizeInteger = HalfSizeWidthInteger, HalfSizeHeightInteger = (
+    width // 2,
+    height // 2,
+)
+
 
 # fill color
 Black = (0, 0, 0)
@@ -81,8 +85,6 @@ def PolygonRepeater(n, PolygonListFloat, PolygonSides):
         pygame.draw.polygon(screen, Black, PolygonListFloat, 2)
         # run this same function over again with the declared value that are stated in this function.
         PolygonRepeater(n, PolygonListFloat, PolygonSides)
-    else:
-        pass
     return
 
 
@@ -90,7 +92,7 @@ while 1:
     # if user clicks the X button quit program
     # if user presses escape button quit program
     for event in pygame.event.get():
-        if event.type == pygame.QUIT or event.type == pygame.K_ESCAPE:
+        if event.type in [pygame.QUIT, pygame.K_ESCAPE]:
             sys.exit()
         elif event.type == pygame.KEYDOWN:
             if event.key == pygame.K_ESCAPE:
